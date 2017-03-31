@@ -30,6 +30,6 @@ The following topics are available:
 
 - [Getting started with Visual Studio Code](with-visual-studio-code.md)
 
-   Visual Studio Code is a programming editor for Windows, Linux, and macOS that supports IntelliSense (code completion) and debugging.
+   Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
 
    This topic shows you how to create and run a simple Hello World application with Visual Studio Code and .NET Core.

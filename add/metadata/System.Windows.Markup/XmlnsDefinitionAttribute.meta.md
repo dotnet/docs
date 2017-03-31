@@ -4,12 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.XmlnsDefinitionAttribute.#ctor(System.String,System.String)
+uid: System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName
 manager: "martinek"
 ---
 
@@ -19,6 +14,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName
+uid: System.Windows.Markup.XmlnsDefinitionAttribute.#ctor(System.String,System.String)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace
 manager: "martinek"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token whose key is wrapped inside another token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents an encrypted key that comes over the wire. The encrypted key is a symmetric key that is encrypted for the receiving party using the receiving party’s public key. When such a key is received, the receiver’s security token is resolved, the symmetric key is decrypted, and an instance of this class is created that contains these two pieces of information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +39,12 @@
         <Parameter Name="wrappingTokenReference" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="keyToWrap">To be added.</param>
-        <param name="wrappingAlgorithm">To be added.</param>
-        <param name="wrappingToken">To be added.</param>
-        <param name="wrappingTokenReference">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">The ID of the key token.</param>
+        <param name="keyToWrap">The key to be wrapped.</param>
+        <param name="wrappingAlgorithm">The algorithm used to do the wrapping.</param>
+        <param name="wrappingToken">A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the wrapping token.</param>
+        <param name="wrappingTokenReference">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents a reference to the wrapping token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.WrappedKeySecurityToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</typeparam>
+        <summary>Gets a value that indicates whether the token can create a key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if the token can create a key identifier clause; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +97,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</typeparam>
+        <summary>Create a key identifier clause.</summary>
+        <returns>The type of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +117,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the wrapped key.</summary>
+        <returns>The wrapped key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +135,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token ID.</summary>
+        <value>The token ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +156,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The specified security key identifier clause.</param>
+        <summary>Compares the current security key identifier clause to a specified one for equality.</summary>
+        <returns>
+          <see langword="true" /> if the current security key identifier clause equals the specified one; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +176,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of security keys.</summary>
+        <value>A collection of <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +194,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token effective start date.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the token effective start date.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +212,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the token expiration date.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the token expiration date.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +230,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the wrapping algorithm.</summary>
+        <value>A <see cref="T:System.String" /> that specifies the wrapping algorithm or the algorithm used to encrypt the symmetric key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +248,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the wrapping token.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the wrapping token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +266,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the wrapping token reference.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents a reference to the wrapping token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

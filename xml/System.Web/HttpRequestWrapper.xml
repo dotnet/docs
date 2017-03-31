@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates the HTTP intrinsic object that enables ASP.NET to read the HTTP values that are sent by a client during a Web request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpRequestWrapper> class derives from the <xref:System.Web.HttpRequestBase> class and serves as a wrapper for the <xref:System.Web.HttpRequest> class. This class exposes the functionality of the <xref:System.Web.HttpRequest> class and exposes the <xref:System.Web.HttpRequestBase> type. The <xref:System.Web.HttpRequestBase> class enables you to replace the original implementation of the <xref:System.Web.HttpRequest> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +40,11 @@
         <Parameter Name="httpRequest" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="httpRequest">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpRequest">The object that this wrapper class provides access to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpRequestWrapper" /> class by using the specified request object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpRequest" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -52,8 +61,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Forcibly terminates the underlying TCP connection, causing any outstanding I/O to fail.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is thread-safe. Any thread may call it at any time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AcceptTypes">
@@ -69,8 +85,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of client-supported MIME accept types.</summary>
+        <value>An array of client-supported MIME accept types.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the anonymous identifier for the user, if it is available.</summary>
+        <value>The current anonymous user identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +121,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path of the root of the ASP.NET application on the server.</summary>
+        <value>The virtual root path of the current application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path of the application root and makes it relative by using the tilde (~) notation for the application root (as in "~/page.aspx").</summary>
+        <value>The virtual path of the application root for the current request with the tilde operator added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +160,16 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="count">The number of bytes to read.</param>
+        <summary>Performs a binary read of a specified number of bytes from the current input stream.</summary>
+        <returns>An array that contains the binary data.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than 0.  
+  
+ \- or -  
+  
+ <paramref name="count" /> is greater than the number of bytes available.</exception>
       </Docs>
     </Member>
     <Member MemberName="Browser">
@@ -163,8 +185,8 @@
         <ReturnType>System.Web.HttpBrowserCapabilitiesBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets information about the requesting client's browser capabilities.</summary>
+        <value>An object that represents the capabilities of the client browser.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +203,8 @@
         <ReturnType>System.Web.HttpClientCertificate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current request's client security certificate.</summary>
+        <value>The client's security certificate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +221,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character set of the data that was provided by the client.</summary>
+        <value>The client's character set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +239,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length, in bytes, of content that was sent by the client.</summary>
+        <value>The length, in bytes, of content that was sent by the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +257,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the MIME content type of the request.</summary>
+        <value>The MIME content type of the request, such as "text/html".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +275,8 @@
         <ReturnType>System.Web.HttpCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of cookies that were sent by the client.</summary>
+        <value>The client's cookies.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +293,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the virtual path of the current request.</summary>
+        <value>The virtual path of the page handler that is currently executing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpRequestWrapper.CurrentExecutionFilePath%2A> property returns the file path of the currently executing page handler.  
+  
+ When you redirect a request using either the <xref:System.Web.HttpServerUtility.Execute%2A?displayProperty=fullName> method or the <xref:System.Web.HttpServerUtility.Transfer%2A?displayProperty=fullName> method, the <xref:System.Web.HttpRequestWrapper.CurrentExecutionFilePath%2A> property returns the path of the page that you are redirecting to (the child page).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentExecutionFilePathExtension">
@@ -289,8 +320,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the extension of the file name that is specified in the <see cref="P:System.Web.HttpRequest.CurrentExecutionFilePath" /> property.</summary>
+        <value>The extension of the file name that is specified in the <see cref="P:System.Web.HttpRequest.CurrentExecutionFilePath" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +338,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path of the current request.</summary>
+        <value>The virtual path of the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,8 +356,8 @@
         <ReturnType>System.Web.HttpFileCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of files that were uploaded by the client, in multipart MIME format.</summary>
+        <value>The files that were uploaded by the client. The items in the <see cref="T:System.Web.HttpFileCollection" /> object are of type <see cref="T:System.Web.HttpPostedFile" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +374,8 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the filter to use when the current input stream is being read.</summary>
+        <value>An object to use as the filter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,8 +392,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of form variables that were sent by the client.</summary>
+        <value>The form variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,9 +411,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is identical to <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> except that it also copies the bytes that are read to the internal storage that is used by ASP.NET to populate the <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Files%2A>, and <xref:System.Web.HttpRequest.InputStream%2A> properties. Because this information is preserved, downstream code such as ASP.NET Web Forms pages (.aspx files) will run successfully. This is not the case with the <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
+  
+-   The <see cref="P:System.Web.HttpRequest.Form" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.Files" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.InputStream" /> property.  
+  
+-   The <see cref="M:System.Web.HttpRequest.GetBufferlessInputStream" /> method.  
+  
+ To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -399,9 +448,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
+  
+-   The <see cref="P:System.Web.HttpRequest.Form" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.InputStream" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.Files" /> property.  
+  
+-   The <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.  
+  
+ To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -420,10 +480,22 @@
         <Parameter Name="disableMaxRequestLength" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disableMaxRequestLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="disableMaxRequestLength">
+          <see langword="true" /> to disable the request length limit; otherwise, <see langword="false" />.</param>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body, , optionally disabling the request length limit that is set in the <see cref="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" /> property.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
+  
+-   The <see cref="P:System.Web.HttpRequest.Form" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.Files" /> property.  
+  
+-   The <see cref="P:System.Web.HttpRequest.InputStream" /> property.  
+  
+-   The <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.  
+  
+ To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -439,8 +511,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of HTTP headers that were sent by the client.</summary>
+        <value>The request headers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,9 +529,10 @@
         <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" /> object of the current <see cref="T:System.Web.HttpWorkerRequest" /> instance.</summary>
+        <value>The <see cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" /> object of the current <see cref="T:System.Web.HttpWorkerRequest" /> instance.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">The current <see cref="T:System.Web.HttpWorkerRequest" /> object is not a <see langword="System.Web.Hosting.IIS7WorkerRequest" /> object or a <see langword="System.Web.Hosting.ISAPIWorkerRequestInProc" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="HttpMethod">
@@ -475,8 +548,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTTP data-transfer method (such as <see langword="GET" />, <see langword="POST" />, or <see langword="HEAD" />) that was used by the client.</summary>
+        <value>The HTTP data-transfer method that was used by the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,8 +566,8 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the contents of the incoming HTTP entity body.</summary>
+        <value>The contents of the incoming HTTP content body.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,8 +585,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides with a copy of the HTTP request entity body to IIS.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The method was invoked on a version of IIS earlier than IIS 7.0.</exception>
       </Docs>
     </Member>
     <Member MemberName="InsertEntityBody">
@@ -534,11 +608,17 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">An array that contains the request entity data.</param>
+        <param name="offset">The zero-based position in <c>buffer</c> at which to begin storing the request entity data.</param>
+        <param name="count">The number of bytes to read into the <c>buffer</c> array.</param>
+        <summary>Provides IIS with a copy of the HTTP request entity body and with information about the request entity object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The method was invoked on a version of IIS earlier than IIS 7.0.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is a negative value.</exception>
+        <exception cref="T:System.ArgumentException">The number of items in <paramref name="count" /> is larger than the available space in <paramref name="buffer" />, given the <paramref name="offset" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -554,8 +634,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the request has been authenticated.</summary>
+        <value>
+          <see langword="true" /> if the request has been authenticated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,8 +653,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the request is from the local computer.</summary>
+        <value>
+          <see langword="true" /> if the request is from the local computer; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,8 +672,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the HTTP connection uses secure sockets (HTTPS protocol).</summary>
+        <value>
+          <see langword="true" /> if the connection is an SSL connection that uses HTTPS protocol; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -611,9 +694,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The name of the collection member to get.</param>
+        <summary>Gets the specified object from the <see cref="P:System.Web.HttpRequest.Cookies" />, <see cref="P:System.Web.HttpRequest.Form" />, <see cref="P:System.Web.HttpRequest.QueryString" />, or <see cref="P:System.Web.HttpRequest.ServerVariables" /> collections.</summary>
+        <value>The <see cref="P:System.Web.HttpRequest.QueryString" />, <see cref="P:System.Web.HttpRequest.Form" />, <see cref="P:System.Web.HttpRequest.Cookies" />, or <see cref="P:System.Web.HttpRequest.ServerVariables" /> collection member that is specified by <paramref name="key" />. If the specified <paramref name="key" /> value is not found, <see langword="null" /> is returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -630,8 +713,8 @@
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Security.Principal.WindowsIdentity" /> type for the current user.</summary>
+        <value>The identity for the current user.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -651,9 +734,9 @@
         <Parameter Name="imageFieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="imageFieldName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="imageFieldName">The name of the image map.</param>
+        <summary>Maps an incoming image-field form parameter to appropriate x-coordinate and y-coordinate values.</summary>
+        <returns>A two-dimensional array of integers.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,9 +756,9 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
+        <summary>Maps the specified virtual path to a physical path on the server.</summary>
+        <returns>The physical path on the server that is specified by <paramref name="virtualPath" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,12 +780,14 @@
         <Parameter Name="allowCrossAppMapping" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <param name="baseVirtualDir">To be added.</param>
-        <param name="allowCrossAppMapping">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="virtualPath">The virtual path (absolute or relative) to map to a physical path.</param>
+        <param name="baseVirtualDir">The virtual base directory path that is used for relative resolution.</param>
+        <param name="allowCrossAppMapping">
+          <see langword="true" /> to indicate that <c>virtualPath</c> can belong to another application; otherwise, <see langword="false" />.</param>
+        <summary>Maps the specified virtual path to a physical path on the server.</summary>
+        <returns>The physical path on the server.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapRawImageCoordinates">
@@ -721,9 +806,9 @@
         <Parameter Name="imageFieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="imageFieldName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="imageFieldName">The name of the image field.</param>
+        <summary>Maps an incoming image field form parameter into appropriate x and y coordinate values.</summary>
+        <returns>The x and y coordinate values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,8 +825,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a combined collection of <see cref="P:System.Web.HttpRequest.QueryString" />, <see cref="P:System.Web.HttpRequest.Form" />, <see cref="P:System.Web.HttpRequest.ServerVariables" />, and <see cref="P:System.Web.HttpRequest.Cookies" /> items.</summary>
+        <value>The collection of combined values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,8 +843,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path of the current request.</summary>
+        <value>The virtual path of the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,9 +861,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets additional path information for a resource that has a URL extension.</summary>
+        <value>The additional path information for the resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the URL Http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequestWrapper.PathInfo%2A> value is /tail.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPath">
@@ -794,8 +886,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the physical file-system path of the current application's root directory.</summary>
+        <value>The file-system path of the current application's root directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -812,8 +904,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the physical file-system path of the requested resource.</summary>
+        <value>The file-system path of the requested resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,8 +922,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of HTTP query-string variables.</summary>
+        <value>The query-string variables that were sent by the client in the URL of the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,8 +940,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the complete URL of the current request.</summary>
+        <value>The complete URL of the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -866,8 +958,8 @@
         <ReturnType>System.Web.ReadEntityBodyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the request entity body has been read, and if so, how it was read.</summary>
+        <value>The value that indicates how the request entity body was read, or that it has not been read.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -884,9 +976,16 @@
         <ReturnType>System.Web.Routing.RequestContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Web.Routing.RequestContext" /> instance of the current request.</summary>
+        <value>The <see cref="T:System.Web.Routing.RequestContext" /> instance of the current request. For non-routed requests, the <see cref="T:System.Web.Routing.RequestContext" /> object that is returned is empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides access to the <xref:System.Web.Routing.RouteData> object for the current request.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestType">
@@ -902,8 +1001,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP data-transfer method (<see langword="GET" /> or <see langword="POST" />) that was used by the client.</summary>
+        <value>The HTTP data-transfer method type that was used by the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,9 +1023,9 @@
         <Parameter Name="includeHeaders" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="includeHeaders">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The physical drive path.</param>
+        <param name="includeHeaders">A value that specifies whether to save HTTP headers to disk.</param>
+        <summary>Saves an HTTP request to disk.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -943,8 +1042,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of Web server variables.</summary>
+        <value>The server variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,9 +1060,16 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Threading.CancellationToken" /> object that is tripped when a request times out.</summary>
+        <value>The cancellation token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TlsTokenBindingInfo">
@@ -979,8 +1085,8 @@
         <ReturnType>System.Web.ITlsTokenBindingInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Tls token binding information.</summary>
+        <value>The Tls token binding information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -997,8 +1103,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes in the current input stream.</summary>
+        <value>The number of bytes in the input stream.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,9 +1121,19 @@
         <ReturnType>System.Web.UnvalidatedRequestValuesBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an access to HTTP request values without triggering request validation.</summary>
+        <value>The unvalidated request values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
+  
+> [!IMPORTANT]
+>  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1033,8 +1149,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets information about the URL of the current request.</summary>
+        <value>An object that contains information about the URL of the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1051,8 +1167,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets information about the URL of the client request that linked to the current URL.</summary>
+        <value>The URL of the page that linked to the current request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,8 +1185,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the complete user-agent string of the client.</summary>
+        <value>The complete user-agent string of the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1087,8 +1203,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the IP host address of the client.</summary>
+        <value>The IP address of the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1105,8 +1221,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DNS name of the client.</summary>
+        <value>The DNS name of the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1123,8 +1239,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a sorted array of client language preferences.</summary>
+        <value>A sorted array of client language preferences, or <see langword="null" /> if the array is empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1142,8 +1258,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes validation to occur for the collections that are accessed through the <see cref="P:System.Web.HttpRequest.Cookies" />, <see cref="P:System.Web.HttpRequest.Form" />, and <see cref="P:System.Web.HttpRequest.QueryString" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpRequest> class uses input validation flags to determine whether to perform validation on the request collections that are accessed through the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, and <xref:System.Web.HttpRequest.QueryString%2A> properties. The <xref:System.Web.HttpRequestWrapper.ValidateInput%2A> method sets these flags so that when the `get` accessors of the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, or <xref:System.Web.HttpRequest.QueryString%2A> properties are invoked, input validation is performed. Validation works by checking all input data against a hard-coded list of potentially dangerous data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

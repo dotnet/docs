@@ -4,7 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlnsPrefixAttribute.Prefix
+uid: System.Windows.Markup.XmlnsPrefixAttribute.#ctor(System.String,System.String)
 manager: "martinek"
 ---
 
@@ -14,6 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlnsPrefixAttribute.#ctor(System.String,System.String)
+uid: System.Windows.Markup.XmlnsPrefixAttribute.Prefix
 manager: "martinek"
 ---

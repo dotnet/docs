@@ -6,14 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled
+uid: System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailable(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,7 +20,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailable(System.String)
+uid: System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

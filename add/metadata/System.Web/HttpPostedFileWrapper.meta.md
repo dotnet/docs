@@ -6,28 +6,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpPostedFileWrapper.InputStream
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpPostedFileWrapper.FileName
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpPostedFileWrapper.ContentLength
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpPostedFileWrapper.SaveAs(System.String)
+uid: System.Web.HttpPostedFileWrapper.ContentType
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -41,7 +20,28 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpPostedFileWrapper.ContentType
+uid: System.Web.HttpPostedFileWrapper.SaveAs(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpPostedFileWrapper.ContentLength
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpPostedFileWrapper.FileName
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.HttpPostedFileWrapper.InputStream
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

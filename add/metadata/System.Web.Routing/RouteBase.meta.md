@@ -6,14 +6,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteBase.RouteExistingFiles
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.RouteBase.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)
+uid: System.Web.Routing.RouteBase.GetRouteData(System.Web.HttpContextBase)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -27,7 +20,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteBase.GetRouteData(System.Web.HttpContextBase)
+uid: System.Web.Routing.RouteBase.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.RouteBase.RouteExistingFiles
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

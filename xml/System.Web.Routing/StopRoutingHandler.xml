@@ -20,8 +20,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way to specify that ASP.NET routing should not handle requests for a URL pattern.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.StopRoutingHandler> class enables you to specify that ASP.NET routing should not handle certain URL requests. You prevent routing from handling certain requests by defining a route and specifying that the <xref:System.Web.Routing.StopRoutingHandler> class should be used to handle that route's pattern. When a request is handled by a <xref:System.Web.Routing.StopRoutingHandler> object, the <xref:System.Web.Routing.StopRoutingHandler> object blocks any additional processing of the request as a route. Instead, the request is processed as an ASP.NET page, Web service, or other ASP.NET endpoint.  
+  
+   
+  
+## Examples  
+ The following example shows how to prevent routing from handling requests for .axd requests.  
+  
+ [!code-csharp[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +50,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.StopRoutingHandler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to prevent routing from handling requests for .axd files.  
+  
+ [!code-csharp[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHttpHandler">
@@ -55,9 +80,9 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestContext">An object that encapsulates information about the request.</param>
+        <summary>Returns the object that processes the request.</summary>
+        <returns>An object that processes the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +102,17 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="requestContext">An object that encapsulates information about the request.</param>
+        <summary>Returns the object that processes the request.</summary>
+        <returns>An object that processes the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.StopRoutingHandler> instance is cast to an <xref:System.Web.Routing.IRouteHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

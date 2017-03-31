@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HttpSessionStateBase class is an abstract class that contains the same members as the <xref:System.Web.SessionState.HttpSessionState> class. The HttpSessionStateBase class enables you to create derived classes that are like the <xref:System.Web.SessionState.HttpSessionState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ The <xref:System.Web.HttpSessionStateBase> class is an abstract class that contains the same members as the <xref:System.Web.SessionState.HttpSessionState> class. The <xref:System.Web.HttpSessionStateBase> class enables you to create derived classes that are like the <xref:System.Web.SessionState.HttpSessionState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
   
- The <xref:System.Web.HttpSessionStateWrapper> class derives from the HttpSessionStateBase class. The <xref:System.Web.HttpSessionStateWrapper> class serves as a wrapper for the <xref:System.Web.SessionState.HttpSessionState> class. At run time, you typically use an instance of the <xref:System.Web.HttpSessionStateWrapper> class to call members of the <xref:System.Web.SessionState.HttpSessionState> object.  
+ The <xref:System.Web.HttpSessionStateWrapper> class derives from the <xref:System.Web.HttpSessionStateBase> class. The <xref:System.Web.HttpSessionStateWrapper> class serves as a wrapper for the <xref:System.Web.SessionState.HttpSessionState> class. At run time, you typically use an instance of the <xref:System.Web.HttpSessionStateWrapper> class to call members of the <xref:System.Web.SessionState.HttpSessionState> object.  
   
  ]]></format>
     </remarks>

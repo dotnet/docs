@@ -6,14 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.String,System.Uri[])
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])
+uid: System.ServiceModel.Activation.ServiceHostFactory.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,7 +20,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activation.ServiceHostFactory.#ctor
+uid: System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.String,System.Uri[])
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

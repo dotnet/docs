@@ -6,14 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XmlSerializerFormatAttribute.Style
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.XmlSerializerFormatAttribute.#ctor
+uid: System.ServiceModel.XmlSerializerFormatAttribute.Use
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,7 +20,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XmlSerializerFormatAttribute.Use
+uid: System.ServiceModel.XmlSerializerFormatAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.XmlSerializerFormatAttribute.Style
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

@@ -4,7 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.DependsOnAttribute.TypeId
+uid: System.Windows.Markup.DependsOnAttribute.Name
 manager: "martinek"
 ---
 
@@ -14,6 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.DependsOnAttribute.Name
+uid: System.Windows.Markup.DependsOnAttribute.TypeId
 manager: "martinek"
 ---

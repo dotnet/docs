@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use ASP.NET routing to process a URL by matching it to the route definitions in an ASP.NET application, or to generate URLs that are based on the route definitions. The RouteDirection enumeration provides values that help you differentiate between these scenarios. This is useful because route constraints are processed differently depending on the scenario. If you create a custom route constraint by implementing the <xref:System.Web.Routing.IRouteConstraint> interface, you might have to check the value of the `routeDirection` parameter in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method to differentiate the scenarios.  
+ You can use ASP.NET routing to process a URL by matching it to the route definitions in an ASP.NET application, or to generate URLs that are based on the route definitions. The <xref:System.Web.Routing.RouteDirection> enumeration provides values that help you differentiate between these scenarios. This is useful because route constraints are processed differently depending on the scenario. If you create a custom route constraint by implementing the <xref:System.Web.Routing.IRouteConstraint> interface, you might have to check the value of the `routeDirection` parameter in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method to differentiate the scenarios.  
   
  ]]></format>
     </remarks>

@@ -4,17 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ContentWrapperAttribute.#ctor(System.Type)
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ContentWrapperAttribute.ContentWrapper
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ContentWrapperAttribute.Equals(System.Object)
+uid: System.Windows.Markup.ContentWrapperAttribute.TypeId
 manager: "martinek"
 ---
 
@@ -24,6 +14,16 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ContentWrapperAttribute.TypeId
+uid: System.Windows.Markup.ContentWrapperAttribute.Equals(System.Object)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ContentWrapperAttribute.ContentWrapper
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ContentWrapperAttribute.#ctor(System.Type)
 manager: "martinek"
 ---

@@ -6,7 +6,18 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipProviderCollection.Add(System.Configuration.Provider.ProviderBase)
+uid: System.Web.Security.MembershipProviderCollection.Item(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Security.MembershipProviderCollection.CopyTo
+---
+
+---
+uid: System.Web.Security.MembershipProviderCollection.CopyTo(System.Web.Security.MembershipProvider[],System.Int32)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -20,18 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipProviderCollection.CopyTo(System.Web.Security.MembershipProvider[],System.Int32)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.MembershipProviderCollection.CopyTo
----
-
----
-uid: System.Web.Security.MembershipProviderCollection.Item(System.String)
+uid: System.Web.Security.MembershipProviderCollection.Add(System.Configuration.Provider.ProviderBase)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

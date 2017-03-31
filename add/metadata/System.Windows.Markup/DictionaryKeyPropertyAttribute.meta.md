@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.#ctor(System.String)
+uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.Name
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.Name
+uid: System.Windows.Markup.DictionaryKeyPropertyAttribute.#ctor(System.String)
 manager: "martinek"
 ---

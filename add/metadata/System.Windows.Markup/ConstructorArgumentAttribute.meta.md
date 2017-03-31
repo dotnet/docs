@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName
+uid: System.Windows.Markup.ConstructorArgumentAttribute.#ctor(System.String)
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ConstructorArgumentAttribute.#ctor(System.String)
+uid: System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName
 manager: "martinek"
 ---

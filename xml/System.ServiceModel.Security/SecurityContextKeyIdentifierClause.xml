@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the key identifier clause for a security context token.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contextId">The unique ID of the security context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class using the specified context identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +54,19 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <param name="generation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contextId">A <see cref="T:System.Xml.UniqueId" /> that represents the Context ID of the security context.</param>
+        <param name="generation">A <see cref="T:System.Xml.UniqueId" /> that refers to the Key generation of the Security Context Token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class using the specified context identifier and generation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
+  
+ For more about the `generation` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyGeneration%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,12 +85,19 @@
         <Parameter Name="derivationLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <param name="generation">To be added.</param>
+        <param name="contextId">The context ID part of the identifier clause.</param>
+        <param name="generation">The generation part of the identifier clause.</param>
         <param name="derivationNonce">To be added.</param>
-        <param name="derivationLength">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="derivationLength">The length of the key being derived.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class with the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `derivationNonce` and `derivationLength` are used for implied derived keys. This is supported only on the sending side.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextId">
@@ -90,8 +113,8 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ID of the security context.</summary>
+        <value>The unique ID of the security context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +131,8 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the generation.</summary>
+        <value>The generation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +152,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be compared.</param>
+        <summary>Compares a specified <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to the current instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class.</summary>
+        <returns>
+          <see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +176,11 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <param name="generation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contextId">The context ID part of the identifier clause.</param>
+        <param name="generation">The generation part of the identifier clause.</param>
+        <summary>Compares a specified <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to the current instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class with the specified context identifier and generation.</summary>
+        <returns>
+          <see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +198,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides a text representation of this instance of the class.</summary>
+        <returns>A text representation of this instance of the class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an assembly level attribute that is used to identify the value of the <see langword="RootNamespace" /> property in a [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] project file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is mainly relevant for type resolutions of partial classes by markup compilers.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.RootNamespaceAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +45,8 @@
         <Parameter Name="nameSpace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="nameSpace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nameSpace">The root namespace value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.RootNamespaceAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string that corresponds to the value of the <see langword="RootNamespace" /> property in a [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] project file.</summary>
+        <value>The string that corresponds to the value of the <see langword="RootNamespace" /> property in a [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] project file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

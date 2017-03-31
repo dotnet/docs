@@ -20,10 +20,10 @@
 ## Remarks  
  This interface is implemented by classes that have child elements that are intended to be reused through the template or defer metaphor. Templates, factories and similar constructs must have unique XAML namescopes that are separate from a main object graph and root XAML. The principle here is that there should be no name collisions when objects created from those child elements are introduced to an application's object graph, and so that DOM operations and XAML reference techniques that rely on the name identifier can rely on name uniqueness in each XAML namescope.  
   
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], INameScope is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.INameScope> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
   
 ## WPF Usage Notes  
- This interface is implemented by the WPF class <xref:System.Windows.NameScope>. Most XAML namescope operations in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] operate by using <xref:System.Windows.NameScope> instances, but information is occasionally communicated internally by using INameScope references.  
+ This interface is implemented by the WPF class <xref:System.Windows.NameScope>. Most XAML namescope operations in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] operate by using <xref:System.Windows.NameScope> instances, but information is occasionally communicated internally by using <xref:System.Windows.Markup.INameScope> references.  
   
  Examples of WPF classes that use a factory or defer metaphor combined with XAML representation are <xref:System.Windows.Style> and <xref:System.Windows.FrameworkTemplate>. These implementations usually rely on the explicit versions of the interface methods available from the <xref:System.Windows.NameScope> class.  
   
@@ -88,6 +88,11 @@
   
  ]]></format>
         </remarks>
+        <block subset="none" type="overrides">
+          <para>Do not permit duplicate names to be registered. If the input <paramref name="name" /> is already assigned to an existing element in the internal collection representation of the XAML namescope (even if it is the same as <paramref name="scopedElement" />), throw an exception.  
+  
+ Also consider throwing an exception if the provided name does not conform to [XamlName Grammar](../Topic/XamlName%20Grammar.md).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="UnregisterName">
@@ -109,6 +114,11 @@
         <param name="name">The name to unregister.</param>
         <summary>Unregisters the provided name from the current XAML namescope.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>If the input name does not exist, throw an exception.  
+  
+ You should remove the name and the previously registered element it refers to from the collection representation of the XAML namescope, so that the same name could potentially be registered again in the future.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

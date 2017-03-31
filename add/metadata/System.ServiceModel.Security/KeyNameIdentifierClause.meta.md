@@ -5,25 +5,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Security.KeyNameIdentifierClause.KeyName
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.Security.KeyNameIdentifierClause.#ctor(System.String)
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.Security.KeyNameIdentifierClause.Matches
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.Security.KeyNameIdentifierClause.ToString
+uid: System.ServiceModel.Security.KeyNameIdentifierClause.Matches(System.String)
 ms.author: "v-jibran"
 manager: "ghogen"
 ---
@@ -35,7 +17,25 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Security.KeyNameIdentifierClause.Matches(System.String)
+uid: System.ServiceModel.Security.KeyNameIdentifierClause.ToString
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.KeyNameIdentifierClause.Matches
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.KeyNameIdentifierClause.#ctor(System.String)
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.KeyNameIdentifierClause.KeyName
 ms.author: "v-jibran"
 manager: "ghogen"
 ---

@@ -6,7 +6,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RequestContext.HttpContext
+uid: System.Web.Routing.RequestContext.RouteData
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -34,7 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RequestContext.RouteData
+uid: System.Web.Routing.RequestContext.HttpContext
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

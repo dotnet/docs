@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlLangPropertyAttribute.Name
+uid: System.Windows.Markup.XmlLangPropertyAttribute.#ctor(System.String)
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XmlLangPropertyAttribute.#ctor(System.String)
+uid: System.Windows.Markup.XmlLangPropertyAttribute.Name
 manager: "martinek"
 ---

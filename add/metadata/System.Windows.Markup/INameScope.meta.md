@@ -4,7 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.INameScope.FindName(System.String)
+uid: System.Windows.Markup.INameScope.UnregisterName(System.String)
 manager: "martinek"
 ---
 
@@ -14,6 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.INameScope.UnregisterName(System.String)
+uid: System.Windows.Markup.INameScope.FindName(System.String)
 manager: "martinek"
 ---
